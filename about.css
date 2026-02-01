@@ -492,3 +492,99 @@
         font-size: 18px;
     }
 }
+
+/* About Page - Empowering Partners Section */
+.about-partners {
+    margin-top: 60px;
+    padding-top: 60px;
+    border-radius: 20px;
+}
+
+.about-partners h2 {
+    margin-bottom: 40px;
+}
+
+/* Mobile benefits list */
+.benefits-list {
+    text-align: left;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.benefit-item {
+    margin-bottom: 30px;
+}
+
+.benefit-item h3 {
+    font-family: var(--font-body);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    color: var(--white);
+}
+
+.benefit-item p {
+    font-size: 14px;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+/* About Page - How It Works Section */
+.about-how-it-works {
+    padding: 80px 0;
+    background-color: var(--white);
+}
+
+/* About Page - CTA Section */
+.about-cta {
+    margin-top: 0;
+}
+
+.about-cta .cta-subtitle {
+    font-size: 14px;
+    max-width: 300px;
+    margin: 0 auto 24px;
+    opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+    .about-partners {
+        margin: 40px 10px;
+        padding: 40px 20px;
+    }
+
+    .about-partners h2 {
+        font-size: 28px;
+    }
+
+    .about-how-it-works {
+        padding: 60px 0;
+    }
+
+    .about-how-it-works h2 {
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+
+    .about-how-it-works .steps-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .about-how-it-works .step-image {
+        height: 220px;
+    }
+
+    .about-cta {
+        height: auto;
+        min-height: 400px;
+        padding: 60px 20px;
+    }
+
+    .about-cta .cta-content h2 {
+        font-size: 28px;
+    }
+}
