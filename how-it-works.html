@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meet the Founders - Majen</title>
+    <title>How It Works - Majen</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="team.css">
+    <link rel="stylesheet" href="how-it-works.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -30,11 +30,11 @@
             </a>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="team.html" class="active">About</a></li>
-                <li><a href="how-it-works.html">How It Works</a></li>
+                <li><a href="team.html">About</a></li>
+                <li><a href="how-it-works.html" class="active">How It Works</a></li>
             </ul>
             <div class="nav-actions">
-                <a href="how-it-works.html#partner" class="nav-link-partner">Partner With Us</a>
+                <a href="#partner" class="nav-link-partner">Partner With Us</a>
                 <a href="index.html#waitlist" class="btn btn-primary">Join Waitlist</a>
             </div>
             <button class="mobile-menu-btn" aria-label="Toggle menu">
@@ -49,48 +49,81 @@
     <div class="mobile-menu">
         <ul class="mobile-nav-links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="team.html" class="active">About</a></li>
+            <li><a href="team.html">About</a></li>
             <li><a href="how-it-works.html">How It Works</a></li>
-            <li><a href="index.html#partner">Partner With Us</a></li>
+            <li><a href="#partner">Partner With Us</a></li>
             <li><a href="index.html#waitlist" class="btn btn-primary">Join Waitlist</a></li>
         </ul>
     </div>
 
-    <!-- Meet the Founders Section -->
-    <section class="founders-section">
+    <!-- Empowering Partners Section -->
+    <section id="partner" class="empowering-partners">
         <div class="container">
-            <h1>Meet the Founders</h1>
-
-            <div class="founders-grid">
-                <div class="founder-card">
-                    <div class="founder-image">
-                        <div class="image-placeholder"></div>
-                    </div>
-                    <h2 class="founder-name">Ifeoma Azinge</h2>
-                    <p class="founder-bio">
-                        Ifeoma Azinge is the former founder of Joluwe, a fashion rental startup producing African-made clothing for U.S. customers, and is completing her PhD in Neuroscience at Brown University. She has deep expertise in African fashion and manufacturing, and a strong technical background in building creative, data-driven solutions for complex problems.
-                    </p>
+            <span class="tag-label">Partner With Us</span>
+            <h1>Empowering Fashion Partners</h1>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <h3>OWN YOUR WORK</h3>
+                    <p>Designers retain control over their designs, pricing, and creative process while building their own customer base.</p>
                 </div>
-
-                <div class="founder-card">
-                    <div class="founder-image">
-                        <div class="image-placeholder"></div>
-                    </div>
-                    <h2 class="founder-name">Nadia Udochi</h2>
-                    <p class="founder-bio">
-                        Nadia Udochi holds an MSc in Development Management from London School of Economics and a Master in International Energy Transitions from Sciences Po, Paris. She specializes in African development, particularly the creative and extractive sectors, and has a proven track record of building strategic partnerships that drive sustainable growth.
-                    </p>
+                <div class="benefit-card">
+                    <h3>EARN GLOBALLY</h3>
+                    <p>Majen enables designers to generate income from global customers without relying on intermediaries or exploitative middlemen.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>SCALE SUSTAINABLY</h3>
+                    <p>We help designers grow at their own pace with tools that support repeat clients, organized production, and long-term business growth.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>BUILD FINANCIAL TRUST</h3>
+                    <p>Secure payments, transparent processes, and reliable fulfillment protect designers' income and reduce financial risk.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Work With Us CTA -->
-    <section class="work-with-us">
+    <!-- How It Works Section -->
+    <section class="how-it-works-page">
         <div class="container">
-            <h2>Work With Us</h2>
-            <p>We collaborate with designers, brands, investors, and organizations to advance African fashion, strengthen creative industries, and create lasting impact.</p>
-            <a href="how-it-works.html#partner" class="btn btn-outline-light">Partner with us</a>
+            <h2>How it works</h2>
+            <div class="steps-grid">
+                <div class="step">
+                    <div class="step-image placeholder-img">
+                        <div class="step-overlay">
+                            <span class="item-tag">Item 1</span>
+                            <span class="item-tag">Item 2</span>
+                        </div>
+                    </div>
+                    <div class="step-number">1</div>
+                    <h3>Discover & Shop</h3>
+                    <p>Browse our curated selection of verified African designers. Discover new brands or shop your favorites through the Majen app.</p>
+                </div>
+                <div class="step">
+                    <div class="step-image placeholder-img"></div>
+                    <div class="step-number">2</div>
+                    <h3>Order With Ease</h3>
+                    <p>Order custom or ready-to-wear pieces with transparent pricing and secure, familiar payment methods.</p>
+                </div>
+                <div class="step">
+                    <div class="step-image placeholder-img">
+                        <div class="delivery-badge">Order delivered ✓</div>
+                    </div>
+                    <div class="step-number">3</div>
+                    <h3>Fulfilled by Majen</h3>
+                    <p>Track your order in real-time on the Majen app. We manage every step and ensure reliable, doorstep delivery worldwide.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-bg">
+            <div class="cta-placeholder"></div>
+        </div>
+        <div class="cta-content">
+            <h2>Unlock Early Access</h2>
+            <a href="index.html#waitlist" class="btn btn-outline-light">Join Waitlist</a>
         </div>
     </section>
 

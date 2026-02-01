@@ -1,0 +1,96 @@
+/* How It Works Page Specific Styles */
+
+/* Empowering Partners Section */
+.empowering-partners {
+    padding: 140px 0 80px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+}
+
+.empowering-partners .tag-label {
+    border-color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 24px;
+}
+
+.empowering-partners h1 {
+    font-family: var(--font-display);
+    font-size: 42px;
+    font-weight: 400;
+    margin-bottom: 60px;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    text-align: left;
+}
+
+.benefit-card h3 {
+    font-family: var(--font-body);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    color: var(--white);
+}
+
+.benefit-card p {
+    font-size: 14px;
+    line-height: 1.7;
+    opacity: 0.9;
+}
+
+/* How It Works Page Section */
+.how-it-works-page {
+    padding: 100px 0;
+    background-color: var(--white);
+}
+
+.how-it-works-page h2 {
+    font-family: var(--font-display);
+    font-size: 48px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .empowering-partners {
+        padding: 120px 0 60px;
+    }
+
+    .empowering-partners h1 {
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+
+    .benefits-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .benefit-card {
+        text-align: center;
+    }
+
+    .how-it-works-page h2 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 480px) {
+    .empowering-partners h1 {
+        font-size: 28px;
+    }
+}
