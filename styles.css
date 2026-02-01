@@ -175,8 +175,8 @@ img {
     min-width: 180px;
     padding: 12px 0;
     border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-    border: 1px solid var(--gray-border);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    border: none;
     opacity: 0;
     visibility: hidden;
     transition: all 0.3s ease;
@@ -750,22 +750,22 @@ img {
 .steps-grid::before {
     content: '';
     position: absolute;
-    top: 294px; /* Position at the step numbers (280px image + 20px margin - half of number height) */
+    top: 312px; /* Position at center of step numbers (280px image + 20px margin + 14px half of 28px number box) */
     left: -100vw;
     width: calc(100% + 100vw - 50px);
     height: 1px;
     background: linear-gradient(to right, var(--primary-color) 0%, var(--primary-color) 95%, transparent 100%);
-    z-index: 0;
+    z-index: 1;
 }
 
 .step {
     text-align: left;
     position: relative;
-    z-index: 1;
 }
 
 .step-number {
     position: relative;
+    z-index: 2;
     background-color: var(--primary-color);
 }
 
@@ -815,7 +815,7 @@ img {
     color: var(--white);
     font-size: 12px;
     font-weight: 600;
-    border-radius: 4px;
+    border-radius: 0;
     margin-bottom: 16px;
 }
 
@@ -1341,71 +1341,18 @@ a.desktop-only {
         margin: 0 10px;
     }
 
-    /* Mobile image grid - staggered layout */
-    .image-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 12px;
+    /* Mobile For Clients - HIDE images */
+    .for-clients .clients-images {
+        display: none;
     }
 
-    .grid-image {
-        min-height: 150px;
-        border-radius: 16px;
-    }
-
-    .grid-image.tall {
-        grid-row: span 1;
-        min-height: 150px;
-    }
-
-    .grid-image:nth-child(1) {
-        grid-column: 1;
-        grid-row: 1;
-    }
-
-    .grid-image:nth-child(2) {
-        grid-column: 2;
-        grid-row: 1 / span 2;
-        min-height: 200px;
-    }
-
-    .grid-image:nth-child(3) {
-        grid-column: 1;
-        grid-row: 2;
-    }
-
-    .grid-image:nth-child(4) {
-        grid-column: 2;
-        grid-row: 3;
-    }
-
-    /* Mobile image collage - staggered layout */
-    .image-collage {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 12px;
-    }
-
-    .collage-image {
-        min-height: 150px;
-        border-radius: 16px;
-    }
-
-    .collage-image.large {
-        grid-row: span 1;
-        min-height: 150px;
-    }
-
-    /* Mobile For Clients layout - images above text */
     .clients-grid {
         display: flex;
         flex-direction: column;
     }
 
-    .clients-images {
-        order: 1;
-    }
-
     .clients-content {
-        order: 2;
+        order: 1;
         text-align: left;
     }
 
@@ -1422,6 +1369,26 @@ a.desktop-only {
     .designers-content {
         order: 2 !important;
         text-align: left;
+    }
+
+    /* Mobile For Designers - centered 2x2 portrait grid */
+    .for-designers .image-collage {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        max-width: 280px;
+        margin: 0 auto;
+    }
+
+    .for-designers .collage-image {
+        min-height: 180px;
+        border-radius: 20px;
+    }
+
+    .for-designers .collage-image.large,
+    .for-designers .collage-image.pattern {
+        grid-row: span 1;
+        min-height: 180px;
     }
 
     /* Hide the horizontal line on mobile */
